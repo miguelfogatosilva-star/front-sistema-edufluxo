@@ -1,0 +1,32 @@
+h1{
+    color: white;
+
+}
+#conta{
+    color: black;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    text-align: center;
+    
+}
+h1 #fluxo{
+    color: rgb(175, 107, 175);
+}
+
+input{
+    height: 40px;
+    width: 300px;
+    margin: 10px auto;
+    border-radius: 10px;  
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
