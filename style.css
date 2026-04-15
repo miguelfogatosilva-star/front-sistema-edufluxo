@@ -1,67 +1,73 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Corpo da página */
-html, body {
-  height: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #e8f5e9; /* verde claro */
-}
-
-/* Organiza a página em coluna */
 body {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    color: #f1f1f1;
 }
 
-/* Cabeçalho (topo) */
-.topo {
-  background-color: #2e7d32; /* verde escuro */
-  color: white;
-  text-align: center;
-  padding: 20px;
+h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    height: 30px;
 }
 
-/* Área principal (lado esquerdo + projetos) */
-.layout {
-  display: grid;
-  grid-template-columns: 250px 1fr; /* coluna do perfil + conteúdo */
-  gap: 20px;
-  padding: 20px;
-
-  /* faz o conteúdo empurrar o rodapé pra baixo */
-  flex: 1;
+h1 #fluxo {
+    color: #bf7af0;
 }
 
-/* Parte "Sobre" */
-.perfil {
-  background-color: #c8e6c9;
-  padding: 15px;
-  border-radius: 8px;
+#conta {
+    height: 20px;
+    background: #1a1d21;
+    padding: 15px;
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #2d3238;
+    background-color: #0f1113;
 }
 
-/* Parte dos projetos */
-.conteudo {
-  background-color: #c8e6c9;
-  padding: 15px;
-  border-radius: 8px;
+input {
+    height: 20px;
+    width: 500px;
+    margin: 12px auto;
+    border-radius: 10px;
+    border: 1px solid #3e444d;
+    background-color: #0f1113;
+    color: white;
+    padding: 15px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Cada projeto */
-.card {
-  background-color: #81c784;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 6px;
+input:focus {
+    border-color: #bf7af0;
+    box-shadow: 0 0 0 3px rgba(191, 122, 240, 0.2);
 }
 
-/* Rodapé */
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #2e7d32;
-  color: white;
+button {
+    height: 45px;
+    width: 100px;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #8e44ad, #bf7af0);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+button {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+button {
+    transform: translateY(0);
 }
